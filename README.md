@@ -45,6 +45,7 @@ git clone https://github.com/Intel-HLS/GKL.git
 cd GKL
 ./gradlew build
 ```
+For more details check `build.sh`
 
 # License
 All code is licensed under the [MIT License](https://opensource.org/licenses/MIT), except:

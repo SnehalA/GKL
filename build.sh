@@ -25,7 +25,7 @@ gcc --version
 echo "Setting proxy"
 PROXY_HOST=`echo $https_proxy | tr -s '/' ':' | cut -d ':' -f2`
 PROXY_PORT=`echo $https_proxy | tr -s '/' ':' | cut -d ':' -f3`
-export JAVA_PROXY="-Djava.securityManager-Ddebug=true -Dhttps.proxyHost=$PROXY_HOST -Dhttps.proxyPort=$PROXY_PORT"
+export JAVA_PROXY="-Dhttps.proxyHost=$PROXY_HOST -Dhttps.proxyPort=$PROXY_PORT"
 
 echo "Clean and Build"
 ./gradlew $JAVA_PROXY clean
